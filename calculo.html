@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/etec.webp" alt="etec" id="logo">
+        <nav>
+        <img src="img/telephone.png" alt="contato" onclick="contato()">
+        <img src="img/home.png" alt="home" onclick="home()">
+        <script>
+           function home(){
+            window.location.href = "home.html"
+            }
+            function contato(){
+                window.location.href = "contato.html"
+            }
+        </script>
+        </nav>
+    </header>
+    <div class="conteiner">
+        <div class="informacoes">
+            <input type="number" id="valor1">
+            <input type="text" id="senha">
+            <input type="button" onclick="mostrar()" value="enviar">
+            <br><br>
+        </div>
+        <div class="cursos">
+            <label>1 Info</label>
+            <input type="radio" name="Curso" value="1">
+            <label>2 Info</label>
+            <input type="radio" name="Curso" value="2">
+            <label>3 Info</label>
+            <input type="radio" name="Curso" value="3">
+        </div>
+        <p id="resposta"></p>
+        <table border="1">
+            <tr>
+                <th>Salas</th>
+                <th>Primeira fase</th>
+                <th>Segunda fase</th>
+                <th>Terceira fase</th>
+            </tr>
+            <tr>
+                <th>1 Info</th>
+                <th name="Pontos_1info"></th>
+                <th name="Pontos_1info"></th>
+                <th name="Pontos_1info"></th>
+            </tr>
+            <tr>
+                <th>2 Info</th>
+                <th name="Pontos_2info"></th>
+                <th name="Pontos_2info"></th>
+                <th name="Pontos_2info"></th>
+            </tr>
+            <tr>
+                <th>3 Info</th>
+                <th name="Pontos_3info"></th>
+                <th name="Pontos_3info"></th>
+                <th name="Pontos_3info"></th>
+
+
+            </tr>
+        </table>
+        <br><br>
+        <table border="1">
+            <tr>
+                <th>Primeiro</th>
+                <th>Segundo</th>
+                <th>Terceiro</th>
+            </tr>
+            <tr>
+                <th name="posicao"></th>
+                <th name="posicao"></th>
+                <th name="posicao"></th>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
